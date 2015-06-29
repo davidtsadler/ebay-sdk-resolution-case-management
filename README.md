@@ -48,6 +48,33 @@ The SDK can be installed with [Composer](http://getcomposer.org/). Please see th
      require 'vendor/autoload.php';
      ```
 
+## Example
+
+### Get Current Version
+
+```php
+<?php
+
+require 'vendor/autoload.php';
+
+use \DTS\eBaySDK\ResolutionCaseManagement\Services;
+use \DTS\eBaySDK\ResolutionCaseManagement\Types;
+
+// Instantiate an eBay service.
+$service = new Services\ResolutionCaseManagementService(array(
+    'authToken' => 'YOUR_PRODUCTION_USER_TOKEN_APPLICATION_KEY'
+));
+
+// Create the API request object.
+$request = new Types\GetVersionRequest();
+
+// Send the request.
+$response = $service->getVersion($request);
+
+// Output the response from the API.
+printf("The current version is: %s\n", $response->version);
+```
+
 ## Project Goals
 
   - Be well maintained.
