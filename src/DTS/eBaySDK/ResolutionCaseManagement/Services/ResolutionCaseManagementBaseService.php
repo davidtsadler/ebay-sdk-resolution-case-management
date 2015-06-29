@@ -25,7 +25,7 @@ class ResolutionCaseManagementBaseService extends \DTS\eBaySDK\Services\BaseServ
     /**
      * @var string Current version of the SDK
      */
-    const VERSION = '0.0.0';
+    const VERSION = '0.1.0';
 
     /**
      * Constants for the various HTTP headers required by the API.
