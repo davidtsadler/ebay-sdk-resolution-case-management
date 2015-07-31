@@ -27,5 +27,8 @@
             "DTS\\eBaySDK\\ResolutionCaseManagement\\": "src/",
             "DTS\\eBaySDK\\ResolutionCaseManagement\\Mocks\\": "test/"
         }
+    },
+    "suggest": {
+        "dts/ebay-sdk-php": "The SDK has moved to a new package name. The package you have installed, ebay-sdk-resolution-case-management, is deprecated and will reach its end of life on the 6th December 2015."
     }
 }
